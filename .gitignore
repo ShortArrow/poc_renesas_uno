@@ -1,0 +1,7 @@
+build/**
+Arduino/**
+.cache
+
+# doctest
+test/tmp/**
+

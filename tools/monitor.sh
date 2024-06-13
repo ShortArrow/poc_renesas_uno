@@ -1,0 +1,1 @@
+sudo arduino-cli monitor -p /dev/ttyACM0 --config-file arduino-cli.yaml
