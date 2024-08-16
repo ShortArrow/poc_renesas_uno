@@ -1,18 +1,27 @@
 CompileFlags:
-  Add: [
-    "-I./**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MINIMA/includes/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/libraries/Arduino_FreeRTOS/src/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/libraries/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/libraries/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/cores/arduino/api/tinyusb/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/cores/arduino/api/deprecated/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/cores/arduino/api/deprecated-avr-comp/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/cores/arduino/api/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/cores/arduino/**",
-    "-I./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/**",
-    "-I./Arduino/packages/arduino/tools/arm-none-eabi-gcc/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/libraries/Arduino_CAN/src/**",
-    "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MINIMA/**",
-    "-I./Arduino/**",
-  ]
+  Add: 
+    - "-nostdinc"
+    - "-nostdlibinc"
+    - "-nobuiltininc"
+    - "-nostdinc++"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/newlib-nano"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/machine"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr1"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr2"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/ext"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/debug"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/sys"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/7.2.1/include"
+    - "-isystem./Arduino/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi/hard"
+    - "-I./*"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MIIMA/includes/**"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MIIMA/includes/ra/fsp/inc"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MIIMA/includes/ra_cfg/fsp_cfg"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MIIMA/includes/ra/fsp/inc/api"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MIIMA/includes/ra_gen"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/variants/MIIMA/includes/ra_gen"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/libraries/**"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/cores/arduino/api/**"
+    - "-I./Arduino/packages/arduino/hardware/renesas_uno/1.2.0/cores/arduino/**"
